@@ -8,17 +8,17 @@ pipeline {
   stages {
     stage('Dependencies') {
       steps {
-        sh 'npm install'
+        sh 'echo npm install'
       }
     }
     stage('Test') {
       steps {
-        sh 'npm test'
+        sh 'echo npm test'
       }
     }
     stage('build') {
       steps {
-        sh 'npm run build'
+        sh 'echo npm run build'
       }
     }
     stage('Archive artifacts') {
